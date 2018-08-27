@@ -1,0 +1,65 @@
+{
+	"name": "twitter-drone",
+	"description": "Dead simple bot to automate retweet, favorite and follow on Twitter",
+	"repository": "https://github.com/redaxmedia/twitter-drone",
+	"keywords":
+	[
+		"twitter",
+		"bot"
+	],
+	"env":
+	{
+		"TWITTER_CONSUMER_KEY":
+		{
+			"required": true
+		},
+		"TWITTER_CONSUMER_SECRET":
+		{
+			"required": true
+		},
+		"TWITTER_ACCESS_TOKEN":
+		{
+			"required": true
+		},
+		"TWITTER_ACCESS_TOKEN_SECRET":
+		{
+			"required": true
+		},
+		"TWITTER_TIMEOUT_MS":
+		{
+			"required": true,
+			"value": "60000"
+		},
+		"RETWEET_COMMAND":
+		{
+			"value": "bin/twitter-drone retweet --search-query=css --search-type=popular --background-run"
+		},
+		"FAVORITE_COMMAND":
+		{
+			"value": "bin/twitter-drone favorite --search-query=php --retweet-count=10 --background-run"
+		},
+		"FOLLOW_COMMAND":
+		{
+			"value": "bin/twitter-drone follow --search-query=html --search-type=popular --background-run"
+		}
+	},
+	"formation":
+	{
+		"web":
+		{
+			"quantity": 0
+		},
+		"retweet":
+		{
+			"quantity": 1
+		},
+		"favorite":
+		{
+			"quantity": 0
+		},
+		"follow":
+		{
+			"quantity": 1
+		}
+	}
+}

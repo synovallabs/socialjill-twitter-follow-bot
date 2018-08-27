@@ -1,0 +1,49 @@
+{
+	"name": "twitter-drone",
+	"description": "Dead simple bot to automate retweet, favorite and follow on Twitter",
+	"version": "1.2.0",
+	"license": "GPL-3.0",
+	"keywords":
+	[
+		"twitter",
+		"bot"
+	],
+	"author":
+	{
+		"name": "Henry Ruhs",
+		"url": "https://redaxmedia.com"
+	},
+	"bugs":
+	{
+		"url": "https://github.com/redaxmedia/twitter-drone/issues"
+	},
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/redaxmedia/twitter-drone.git"
+	},
+	"dependencies":
+	{
+		"commander": "2.16.0",
+		"dotenv": "6.0.0",
+		"extend": "3.0.1",
+		"ora": "2.1.0",
+		"twit": "2.2.10"
+	},
+	"devDependencies":
+	{
+		"eslint": "5.0.1",
+		"eslint-config-redaxmedia": "1.0.1",
+		"mocha": "5.2.0"
+	},
+	"scripts":
+	{
+		"start": "bin/twitter-drone --dry-run",
+		"lint": "eslint bin/twitter-drone src tests",
+		"test": "mocha tests/*Test.js"
+	},
+	"bin":
+	{
+		"twitter-drone": "./bin/twitter-drone"
+	}
+}
