@@ -1,6 +1,6 @@
 {
-	"name": "twitter-drone",
-	"description": "Dead simple bot to automate retweet, favorite and follow on Twitter",
+	"name": "socialjill-twitter-follow-bot",
+	"description": "A basic bot to automate retweet, favorite and follow on Twitter",
 	"version": "1.2.0",
 	"license": "GPL-3.0",
 	"keywords":
@@ -10,17 +10,17 @@
 	],
 	"author":
 	{
-		"name": "Henry Ruhs",
-		"url": "https://redaxmedia.com"
+		"name": "Synoval Labs",
+		"url": "https://synoval.com"
 	},
 	"bugs":
 	{
-		"url": "https://github.com/redaxmedia/twitter-drone/issues"
+		"url": "https://github.com/synovallabs/socialjill-twitter-follow-bot/issues"
 	},
 	"repository":
 	{
 		"type": "git",
-		"url": "https://github.com/redaxmedia/twitter-drone.git"
+		"url": "https://github.com/synovallabs/socialjill-twitter-follow-bot.git"
 	},
 	"dependencies":
 	{
